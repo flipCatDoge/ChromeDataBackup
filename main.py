@@ -48,7 +48,7 @@ class ChromeProfileCopier:
         for process in psutil.process_iter(["pid", "name"]):
             try:
                 # 检查进程名称是否包含 'chrome'
-                if "google chrome" in process.info["name"].lower():
+                if "chrome.exe" in process.info["name"].lower():
                     return True
             except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
                 pass
