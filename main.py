@@ -141,6 +141,7 @@ class ChromeProfileCopier:
                 "Warning",
                 "谷歌浏览器正在运行，请关闭浏览器后再进行操作",
             )
+            self.copy_button.config(state="normal")  # 备份完成后重新启用按钮
             return
         chrome_user_data_dir = self.get_chrome_user_data_dir()
         if chrome_user_data_dir is None:
@@ -148,10 +149,12 @@ class ChromeProfileCopier:
                 "Error",
                 "不支持的平台或无法确定Chrome用户数据目录",
             )
+            self.copy_button.config(state="normal")  # 备份完成后重新启用按钮
             return
         profiles = self.find_chrome_profiles(chrome_user_data_dir)
         if not profiles:
             messagebox.showwarning("Warning", "没有需要备份的用户数据")
+            self.copy_button.config(state="normal")  # 备份完成后重新启用按钮
             return
         # 统计要复制的所有文件的总数
         progressMax = sum(
