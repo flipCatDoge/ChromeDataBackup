@@ -81,7 +81,7 @@ class ChromeProfileCopier:
             if os.path.isdir(folder_path):
                 if folder_name == "Default":
                     print(f"Found Default profile: {folder_path}")
-                    # found_profiles.append(folder_name)
+                    found_profiles.append(folder_name)
                 elif profile_pattern.match(folder_name):
                     print(f"Found {folder_name} profile: {folder_path}")
                     found_profiles.append(folder_name)
