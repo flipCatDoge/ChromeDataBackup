@@ -5,8 +5,8 @@
 今天（2024年10月14日），当我愉快的吃完午饭，回到电脑前，打开浏览器的时候，天塌了，我的浏览器数据全没了，经过再三确认，发现有一个用户的数据损坏了，无法恢复，另外两个用户的数据还在，真的是太痛啦！研究一番之后，才知道谷歌用户数据是可以很简单粗暴的进行备份的，只需要将浏览器的用户数据目录（默认路径为：C:\Users\用户名\AppData\Local\Google\Chrome\User Data）拷贝到其他位置即可。考虑到每次进行备份，需要鼠标点点点，因此，我写了这个软件，自动化备份用户数据。
 
 ## 脚本使用方法 Usage
-1. 下载软件：ChromeDataBackup.exe（找到当前网页的Tags或者Releases页面，下载“ChromeDataBackup_V1.0.exe”即可）
-2. 将软件放置到任意目录，如：C:\Program Files\ChromeDataBackup
+1. 下载软件：ChromeDataBackup.zip（找到当前网页的Tags或者Releases页面，下载“ChromeDataBackup_V1.0.zip”）
+2. 将软件放置到任意目录，解压
 3. 打开软件，点击“开始备份”按钮，然后选择备份目录，等待备份完成即可。
 
 ## 注意事项 Attention
